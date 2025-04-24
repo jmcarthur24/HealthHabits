@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Contact | Healthy Habit Builder</title>
+  <meta name="description" content="Send us your feedback.">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contact">
+  <header>
+    <nav>
+      <div class="logo"><a href="index.html">Healthy Habit Builder</a></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="create.html">Create Goal</a>
+        <a href="tracker.html">Tracker</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Message
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <p id="contactResponse" class="hidden">Thanks for your feedback!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Healthy Habit Builder</p>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

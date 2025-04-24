@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Create Goal | Healthy Habit Builder</title>
+  <meta name="description" content="Create a new healthy habit goal.">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="create">
+  <header>
+    <nav>
+      <div class="logo"><a href="index.html">Healthy Habit Builder</a></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="create.html" class="active">Create Goal</a>
+        <a href="tracker.html">Tracker</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <h2>Create a New Habit</h2>
+      <form id="goalForm" novalidate>
+        <label>Goal Name
+          <input type="text" name="goalName" required placeholder="e.g., Drink 8 glasses of water">
+        </label>
+        <label>Description
+          <input type="text" name="description" placeholder="Optional description">
+        </label>
+        <label>Frequency (per week)
+          <input type="number" name="frequency" min="1" max="7" required>
+        </label>
+        <label>Importance
+          <select name="importance">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </label>
+        <button type="submit" class="btn">Save Goal</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Healthy Habit Builder</p>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
