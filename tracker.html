@@ -24,16 +24,22 @@
   <main>
     <section class="container">
       <h2>Your Goals</h2>
-      <ul id="goalList" class="goal-list"></ul>
-
+      
       <div class="progress-wrapper">
+        <span id="progressPercent">0%</span>
         <div class="progress-container">
           <div id="progressBar" class="progress-bar"></div>
         </div>
-        <span id="progressPercent">0%</span>
       </div>
-
-      <button id="resetBtn" class="btn secondary">Reset Goals</button>
+      
+      <div class="goals-container">
+        <ul id="goalList" class="goal-list"></ul>
+        
+        <div class="actions-container">
+          <button id="resetBtn" class="btn secondary">Reset Goals</button>
+          <a href="create.html" class="btn" id="addNewBtn">Add New Goal</a>
+        </div>
+      </div>
     </section>
   </main>
 
